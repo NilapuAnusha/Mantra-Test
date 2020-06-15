@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-const fetched_cache = () => {
-  axios({
+const async fetched_cache = () => {
+  await axios({
     url: 'https://reqres.in/api/users?page=1'
     adapter: jsonpAdapter
   }).then((res) => {     
